@@ -21,7 +21,7 @@ public class BankAccount {
 	        transactionHistory.add(new Transaction(TransactionType.DEPOSIT, amount, balance, date));
 	    }
 	 
-	 public void withdraw(double amount) {
+	 public void withdrawal(double amount) {
 	        balance -= amount;
 	        Date date = new Date();
 	        transactionHistory.add(new Transaction(TransactionType.WITHDRAWAL, amount, balance, date));
